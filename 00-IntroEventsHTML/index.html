@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Events HTML</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Eventos no HTML</h1>
+      <section>
+        <label for="on-mouse-enter">Mouse Enter</label>
+        <input
+          type="text"
+          id="on-mouse-enter"
+          onmouseenter="console.log('Entrou o mouse')"
+        />
+      </section>
+
+      <section>
+        <label for="on-mouse-down">Mouse Down</label>
+        <input
+          type="text"
+          id="on-mouse-down"
+          onmousedown="console.log('Clicou com o mouse')"
+        />
+      </section>
+
+      <section>
+        <label for="on-focus">On Focus</label>
+        <input
+          type="text"
+          id="on-focus"
+          onfocus="console.log('Elemento Focado')"
+        />
+      </section>
+
+      <section>
+        <label for="on-blur">On Blur</label>
+        <input
+          type="text"
+          id="on-blur"
+          onblur="console.log('Elemento Desfocado')"
+        />
+      </section>
+
+      <button onclick="console.log('Clicou')">Clique Aqui</button>
+    </div>
+  </body>
+</html>
